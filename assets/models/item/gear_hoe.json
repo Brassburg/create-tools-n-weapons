@@ -4,7 +4,8 @@
 		"9": "minecraft:block/anvil",
 		"13": "create:item/wrench",
 		"15": "minecraft:block/polished_andesite",
-		"16": "create:block/andesite_casing_very_short"
+		"16": "create:block/andesite_casing_very_short",
+		"particle": "minecraft:block/anvil"
 	},
 	"elements": [
 		{
@@ -285,15 +286,16 @@
 		},
 		"gui": {
 			"rotation": [-90, -45, -90],
-			"translation": [-1, -1, 0],
-			"scale": [1, 0.75, 0.75]
+			"translation": [-0.5, -1, 0],
+			"scale": [0.9, 0.9, 0.9]
 		},
 		"head": {
 			"translation": [0, 7.25, 0]
 		},
 		"fixed": {
 			"rotation": [-90, 45, 90],
-			"translation": [-0.5, -2, 0]
+			"translation": [0, -1.5, 0],
+			"scale": [1.1, 1.1, 1.1]
 		}
 	},
 	"groups": [

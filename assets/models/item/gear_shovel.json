@@ -4,7 +4,7 @@
 		"5": "create:block/andesite_casing_short",
 		"9": "minecraft:block/anvil",
 		"10": "create:item/wrench",
-		"particle": "create:item/wrench"
+		"particle": "create:block/andesite_casing_short"
 	},
 	"elements": [
 		{
@@ -202,7 +202,7 @@
 		"gui": {
 			"rotation": [0, 0, -45],
 			"translation": [-1, -1, 0],
-			"scale": [1, 0.75, 0.75]
+			"scale": [0.8, 0.8, 0.8]
 		},
 		"fixed": {
 			"rotation": [0, 0, 45],

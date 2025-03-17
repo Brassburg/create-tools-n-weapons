@@ -1,10 +1,10 @@
 {
 	"credit": "Made with Blockbench",
 	"textures": {
-		"2": "axeblade",
+		"2": "kubejs:item/axe_blade",
 		"4": "minecraft:block/anvil",
 		"8": "create:item/wrench",
-		"particle": "axeblade"
+		"particle": "kubejs:item/axe_blade"
 	},
 	"elements": [
 		{
@@ -364,13 +364,14 @@
 			"translation": [0, 6, 0]
 		},
 		"gui": {
-			"rotation": [0, 0, -45],
-			"translation": [-1, -1, 0],
-			"scale": [0.8, 0.8, 0.8]
+			"rotation": [0, -180, 45],
+			"translation": [-0.25, -1, 0],
+			"scale": [0.9, 0.9, 0.9]
 		},
 		"fixed": {
-			"rotation": [0, 180, -45],
-			"translation": [1.5, 0, 0]
+			"rotation": [0, 0, 45],
+			"translation": [0.5, -1.5, 0],
+			"scale": [1.1, 1.1, 1.1]
 		}
 	},
 	"groups": [
