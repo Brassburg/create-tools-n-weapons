@@ -1,0 +1,31 @@
+{
+  "type": "create:mechanical_crafting",
+  "pattern": [
+	"m",
+	"i",
+    "p",
+    "n",
+    "g"
+  ],
+  "key": {
+    "g": {
+      "item": "create:gantry_shaft"
+    },
+    "p": {
+      "item": "create:precision_mechanism"
+    },
+    "n": {
+      "item": "minecraft:netherite_shovel"
+    },
+    "m": {
+      "item": "create:mechanical_plough"
+    },
+    "i": {
+      "item": "create:industrial_iron_block"
+    }
+  },
+  "result": {
+    "item": "create_tools_n_weapons:gear_shovel",
+    "count": 1
+  }
+}

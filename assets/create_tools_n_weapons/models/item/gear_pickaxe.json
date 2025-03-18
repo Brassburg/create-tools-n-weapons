@@ -1,0 +1,8 @@
+{
+  "parent": "create_tools_n_weapons:custom/gear_pickaxe",
+  "textures": {
+		"4": "minecraft:block/anvil",
+		"8": "create:item/wrench",
+		"particle": "create:item/wrench"
+  }
+}

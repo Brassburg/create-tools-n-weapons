@@ -1,0 +1,13 @@
+{
+  "required": true,
+  "minVersion": "0.8",
+  "package": "net.brassburg.mixins",
+  "compatibilityLevel": "JAVA_17",
+  "mixins": [
+    "CreateToolsNWeaponsModRepairItemRecipeMixin"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  },
+  "refmap": "create_tools_n_weapons.refmap.json"
+}
