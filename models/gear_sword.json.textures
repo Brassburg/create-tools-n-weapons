@@ -1,0 +1,14 @@
+{
+  "mappings": {
+    "default": {
+      "map": {
+        "2": "",
+        "3": "",
+        "5": "",
+        "6": "sword_blade",
+        "plate": ""
+      },
+      "name": "default"
+    }
+  }
+}

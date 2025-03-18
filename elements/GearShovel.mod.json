@@ -1,0 +1,33 @@
+{
+  "_fv": 57,
+  "_type": "tool",
+  "definition": {
+    "toolType": "Spade",
+    "renderType": 1,
+    "blockingRenderType": 0,
+    "texture": "wrench",
+    "customModelName": "gear_shovel:default",
+    "blockingModelName": "Normal blocking",
+    "name": "Gear Shovel",
+    "specialInformation": {
+      "fixedValue": []
+    },
+    "creativeTab": {
+      "value": "CUSTOM:CreateToolsNWeapons"
+    },
+    "harvestLevel": 0,
+    "efficiency": 14.0,
+    "attackSpeed": 1.2,
+    "enchantability": 22,
+    "damageVsEntity": 4.0,
+    "usageCount": 2500,
+    "blocksAffected": [],
+    "glowCondition": {
+      "fixedValue": false
+    },
+    "repairItems": [],
+    "immuneToFire": true,
+    "stayInGridWhenCrafting": false,
+    "damageOnCrafting": false
+  }
+}

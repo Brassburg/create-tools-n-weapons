@@ -1,0 +1,11 @@
+{
+	"parent": "create_tools_n_weapons:custom/gear_sword",
+	"textures": {
+		"2": "minecraft:block/anvil",
+		"3": "create:block/andesite_casing_short",
+		"5": "create:item/wrench",
+		"6": "create_tools_n_weapons:item/sword_blade",
+		"particle": "create:item/wrench",
+		"plate": "create:block/bracket_plate_metal"
+  }
+}

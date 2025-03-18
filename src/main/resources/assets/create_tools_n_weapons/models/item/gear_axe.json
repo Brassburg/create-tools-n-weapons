@@ -1,0 +1,9 @@
+{
+  "parent": "create_tools_n_weapons:custom/gear_axe",
+  "textures": {
+		"2": "create_tools_n_weapons:item/axe_blade",
+		"4": "minecraft:block/anvil",
+		"8": "create:item/wrench",
+		"particle": "create_tools_n_weapons:item/axe_blade"
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "_fv": 57,
+  "_type": "tool",
+  "definition": {
+    "toolType": "Sword",
+    "renderType": 1,
+    "blockingRenderType": 0,
+    "texture": "wrench",
+    "customModelName": "gear_sword:default",
+    "blockingModelName": "Normal blocking",
+    "name": "Gear Sword",
+    "specialInformation": {
+      "fixedValue": []
+    },
+    "creativeTab": {
+      "value": "CUSTOM:CreateToolsNWeapons"
+    },
+    "harvestLevel": 0,
+    "efficiency": 14.0,
+    "attackSpeed": 2.0,
+    "enchantability": 22,
+    "damageVsEntity": 10.0,
+    "usageCount": 2500,
+    "blocksAffected": [],
+    "glowCondition": {
+      "fixedValue": false
+    },
+    "repairItems": [],
+    "immuneToFire": true,
+    "stayInGridWhenCrafting": false,
+    "damageOnCrafting": false
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "parent": "create_tools_n_weapons:custom/gear_shovel",
+  "textures": {
+		"5": "create:block/andesite_casing_short",
+		"9": "minecraft:block/anvil",
+		"10": "create:item/wrench",
+		"particle": "create:block/andesite_casing_short"
+  }
+}

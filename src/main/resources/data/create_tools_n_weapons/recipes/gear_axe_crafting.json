@@ -1,0 +1,35 @@
+{
+  "type": "create:mechanical_crafting",
+  "pattern": [
+	" s ",
+	"sci",
+    " sp",
+    "  n",
+    "  g"
+  ],
+  "key": {
+    "g": {
+      "item": "create:gantry_shaft"
+    },
+    "p": {
+      "item": "create:precision_mechanism"
+    },
+    "n": {
+      "item": "minecraft:netherite_axe"
+    },
+    "c": {
+      "item": "create:large_cogwheel"
+    },
+    "i": {
+      "item": "create:industrial_iron_block"
+    },
+    "s": {
+      "item": "create:brass_sheet"
+    }
+    
+  },
+  "result": {
+    "item": "create_tools_n_weapons:gear_axe",
+    "count": 1
+  }
+}

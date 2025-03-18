@@ -1,0 +1,188 @@
+{
+  "mod_elements": [
+    {
+      "name": "GearPickaxe",
+      "type": "tool",
+      "sortid": 2,
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "gear_pickaxe",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/create_tools_n_weapons/models/item/gear_pickaxe.json",
+          "src/main/java/net/brassburg/item/GearPickaxeItem.java"
+        ]
+      }
+    },
+    {
+      "name": "CreateToolsNWeapons",
+      "type": "tab",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "create_tools_n_weapons",
+      "metadata": {
+        "files": []
+      }
+    },
+    {
+      "name": "GearAxe",
+      "type": "tool",
+      "sortid": 1,
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "gear_axe",
+      "metadata": {
+        "files": [
+          "src/main/java/net/brassburg/item/GearAxeItem.java",
+          "src/main/resources/assets/create_tools_n_weapons/models/item/gear_axe.json"
+        ]
+      }
+    },
+    {
+      "name": "GearPickaxeCrafting",
+      "type": "recipe",
+      "sortid": 7,
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "gear_pickaxe_crafting",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/create_tools_n_weapons/recipes/gear_pickaxe_crafting.json"
+        ]
+      }
+    },
+    {
+      "name": "GearSword",
+      "type": "tool",
+      "sortid": 3,
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "gear_sword",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/create_tools_n_weapons/models/item/gear_sword.json",
+          "src/main/java/net/brassburg/item/GearSwordItem.java"
+        ]
+      }
+    },
+    {
+      "name": "GearShovel",
+      "type": "tool",
+      "sortid": 4,
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "gear_shovel",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/create_tools_n_weapons/models/item/gear_shovel.json",
+          "src/main/java/net/brassburg/item/GearShovelItem.java"
+        ]
+      }
+    },
+    {
+      "name": "GearHoe",
+      "type": "tool",
+      "sortid": 5,
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "gear_hoe",
+      "metadata": {
+        "files": [
+          "src/main/java/net/brassburg/item/GearHoeItem.java",
+          "src/main/resources/assets/create_tools_n_weapons/models/item/gear_hoe.json"
+        ]
+      }
+    },
+    {
+      "name": "GearAxeCrafting",
+      "type": "recipe",
+      "sortid": 6,
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "gear_axe_crafting",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/create_tools_n_weapons/recipes/gear_axe_crafting.json"
+        ]
+      }
+    },
+    {
+      "name": "GearSwordCrafting",
+      "type": "recipe",
+      "sortid": 8,
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "gear_sword_crafting",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/create_tools_n_weapons/recipes/gear_sword_crafting.json"
+        ]
+      }
+    },
+    {
+      "name": "GearShovelCrafting",
+      "type": "recipe",
+      "sortid": 9,
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "gear_shovel_crafting",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/create_tools_n_weapons/recipes/gear_shovel_crafting.json"
+        ]
+      }
+    },
+    {
+      "name": "GearHoeCrafting",
+      "type": "recipe",
+      "sortid": 10,
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "gear_hoe_crafting",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/create_tools_n_weapons/recipes/gear_hoe_crafting.json"
+        ]
+      }
+    }
+  ],
+  "variable_elements": [],
+  "sound_elements": [],
+  "language_map": {
+    "en_us": {
+      "item.create_tools_n_weapons.gear_pickaxe": "Gear Pickaxe",
+      "item.create_tools_n_weapons.gear_axe": "Gear Axe",
+      "item.create_tools_n_weapons.gear_hoe": "Gear Hoe",
+      "item.create_tools_n_weapons.gear_shovel": "Gear Shovel",
+      "item_group.create_tools_n_weapons.create_tools_n_weapons": "Create Tools N Weapons",
+      "item.create_tools_n_weapons.gear_sword": "Gear Sword"
+    }
+  },
+  "foldersRoot": {
+    "name": "~",
+    "children": []
+  },
+  "workspaceSettings": {
+    "modid": "create_tools_n_weapons",
+    "modName": "Create: Tools n Weapons",
+    "version": "1.0.0-1.20.1",
+    "description": "Create mod addon for tools and weapons",
+    "author": "Brassburg",
+    "websiteURL": "https://modrinth.com/project/createtools-n-weapons",
+    "license": "MIT License",
+    "disableForgeVersionCheck": true,
+    "serverSideOnly": false,
+    "modPicture": "create.tools.n.weapons",
+    "requiredMods": [
+      "create"
+    ],
+    "dependencies": [],
+    "dependants": [],
+    "mcreatorDependencies": [],
+    "currentGenerator": "fabric-1.20.1",
+    "credits": "Brassburg",
+    "modElementsPackage": "net.brassburg",
+    "lockBaseModFiles": false
+  },
+  "mcreatorVersion": 202300452316
+}

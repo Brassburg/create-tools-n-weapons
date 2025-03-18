@@ -1,0 +1,33 @@
+{
+  "_fv": 57,
+  "_type": "tool",
+  "definition": {
+    "toolType": "Hoe",
+    "renderType": 1,
+    "blockingRenderType": 0,
+    "texture": "wrench",
+    "customModelName": "gear_hoe:default",
+    "blockingModelName": "Normal blocking",
+    "name": "Gear Hoe",
+    "specialInformation": {
+      "fixedValue": []
+    },
+    "creativeTab": {
+      "value": "CUSTOM:CreateToolsNWeapons"
+    },
+    "harvestLevel": 0,
+    "efficiency": 14.0,
+    "attackSpeed": 4.2,
+    "enchantability": 22,
+    "damageVsEntity": 1.2,
+    "usageCount": 2500,
+    "blocksAffected": [],
+    "glowCondition": {
+      "fixedValue": false
+    },
+    "repairItems": [],
+    "immuneToFire": true,
+    "stayInGridWhenCrafting": false,
+    "damageOnCrafting": false
+  }
+}

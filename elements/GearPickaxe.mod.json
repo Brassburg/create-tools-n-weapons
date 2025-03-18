@@ -1,0 +1,35 @@
+{
+  "_fv": 57,
+  "_type": "tool",
+  "definition": {
+    "toolType": "Pickaxe",
+    "renderType": 1,
+    "blockingRenderType": 0,
+    "texture": "wrench",
+    "customModelName": "gear_pickaxe:default",
+    "blockingModelName": "Normal blocking",
+    "name": "Gear Pickaxe",
+    "specialInformation": {
+      "fixedValue": [
+        "This pick is special"
+      ]
+    },
+    "creativeTab": {
+      "value": "CUSTOM:CreateToolsNWeapons"
+    },
+    "harvestLevel": 5,
+    "efficiency": 12.0,
+    "attackSpeed": 1.2,
+    "enchantability": 22,
+    "damageVsEntity": 7.0,
+    "usageCount": 2500,
+    "blocksAffected": [],
+    "glowCondition": {
+      "fixedValue": false
+    },
+    "repairItems": [],
+    "immuneToFire": true,
+    "stayInGridWhenCrafting": false,
+    "damageOnCrafting": false
+  }
+}
