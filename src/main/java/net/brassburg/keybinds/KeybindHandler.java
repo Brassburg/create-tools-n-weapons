@@ -34,16 +34,16 @@ public class KeybindHandler {
             if (!heldItem.isIn(MOD_ITEMS_TAG)) {
                 if (CreateToolsNWeaponsMod.isBreakModeActive) {
                     CreateToolsNWeaponsMod.isBreakModeActive = false;
-                    client.player.sendMessage(Text.of("BreakMode OFF"), true);
+//                    client.player.sendMessage(Text.of("BreakMode OFF"), true);
                 }
                 return;
             }
 
             if (modeKey.wasPressed()) {
                 CreateToolsNWeaponsMod.isBreakModeActive = !CreateToolsNWeaponsMod.isBreakModeActive;
-                client.player.sendMessage(Text.of(
-                        CreateToolsNWeaponsMod.isBreakModeActive ? "BreakMode ON" : "BreakMode OFF"
-                ), true);
+//                client.player.sendMessage(Text.of(
+//                        CreateToolsNWeaponsMod.isBreakModeActive ? "BreakMode ON" : "BreakMode OFF"
+//                ), true);
             }
         });
     }
