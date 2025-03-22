@@ -1,37 +1,73 @@
 plugins {
-    id 'fabric-loom' version '1.4-SNAPSHOT'
+    id 'fabric-loom' version '1.10-SNAPSHOT'
+    id 'maven-publish'
 }
 
-sourceCompatibility = JavaVersion.VERSION_17
-targetCompatibility = JavaVersion.VERSION_17
+version = project.mod_version
+group = project.maven_group
 
-archivesBaseName = 'modid'
-version = '1.0.0'
-group = 'com.yourname.modid'
-actualmodid = 'create_tools_n_weapons'
+base {
+    archivesName = project.archives_base_name
+}
 
-loom {
-    mixin {
-        defaultRefmapName = actualmodid + ".refmap.json"
+repositories {
+    maven { url = "https://maven.parchmentmc.org" } // Parchment mappings
+    maven { url = "https://mvn.devos.one/releases" } // Porting Lib releases
+    maven { url = "https://mvn.devos.one/snapshots" } // Create and several dependencies
+    maven { url = "https://maven.tterrag.com/" } // Flywheel
+    maven { url = "https://maven.jamieswhiteshirt.com/libs-release" } // Reach Entity Attributes
+    maven { url = "https://raw.githubusercontent.com/Fuzss/modresources/main/maven" } // Forge Config API Port
+
+    maven { // Fabric ASM for Porting Lib
+        url = "https://jitpack.io/"
+        content { includeGroupAndSubgroups("com.github") }
     }
-    if (file("src/main/resources/create_tools_n_weapons.accesswidener").exists())
-        accessWidenerPath = file("src/main/resources/create_tools_n_weapons.accesswidener")
+
+    maven { url = "https://maven.shedaniel.me" } // Cloth Config, REI
+    maven { url = "https://maven.blamejared.com" } // JEI
+
+    maven { url = "https://maven.terraformersmc.com/releases" } // Mod Menu, EMI
 }
 
 dependencies {
-    minecraft "com.mojang:minecraft:1.20.1"
-    mappings loom.officialMojangMappings()
-    modImplementation "net.fabricmc:fabric-loader:0.14.21"
+    // To change the versions see the gradle.properties file
+    minecraft "net.minecraft:minecraft:${project.minecraft_version}"
+    mappings "net.fabricmc:yarn:${project.yarn_mappings}:v2"
+    modImplementation "net.fabricmc:fabric-loader:${project.loader_version}"
 
-    //Fabric api
-    modImplementation "net.fabricmc.fabric-api:fabric-api:0.83.1+1.20.1"
+    modImplementation("com.simibubi.create:create-fabric-$minecraft_version:$create_version")
+
+    // Fabric API. This is technically optional, but you probably want it anyway.
+    modImplementation "net.fabricmc.fabric-api:fabric-api:${project.fabric_version}"
+    modApi("me.shedaniel.cloth:cloth-config-fabric:${project.fabric_version}") {
+        exclude(group: "net.fabricmc.fabric-api")
+    }
+    modApi "me.shedaniel.cloth:cloth-config-fabric:${project.cloth_config_api_version}"
+    //modApi "dev.engine-room.flywheel:flywheel-fabric-$minecraft_version:$flywheelVersion"
+    annotationProcessor "com.tterrag.registrate:Registrate:MC1.20-1.3.11"
+
+    // Development QOL
+    modLocalRuntime("com.terraformersmc:modmenu:$modmenu_version")
+
+    //modApi "dev.engine-room.flywheel:flywheel-fabric-${project.minecraft_version}:${project.flywheel_minecraft_version}"
+
+    // Recipe Viewers - Create Fabric supports JEI, REI, and EMI.
+    // See root gradle.properties to choose which to use at runtime.
+    switch (recipe_viewer.toLowerCase(Locale.ROOT)) {
+        case "jei": modLocalRuntime("mezz.jei:jei-$minecraft_version-fabric:$jei_version"); break
+        case "rei": modLocalRuntime("me.shedaniel:RoughlyEnoughItems-fabric:$rei_version"); break
+        case "emi": modLocalRuntime("dev.emi:emi-fabric:$emi_version"); break
+        case "disabled": break
+        default: println("Unknown recipe viewer specified: $recipe_viewer. Must be JEI, REI, EMI, or disabled.")
+    }
+
 }
 
 processResources {
     inputs.property "version", project.version
 
     filesMatching("fabric.mod.json") {
-        expand "version": project.version
+        expand "version": inputs.properties.version
     }
 }
 
@@ -40,6 +76,9 @@ tasks.withType(JavaCompile).configureEach {
 }
 
 java {
+    // Loom will automatically attach sourcesJar to a RemapSourcesJar task and to the "build" task
+    // if it is present.
+    // If you remove this line, sources will not be generated.
     withSourcesJar()
 
     sourceCompatibility = JavaVersion.VERSION_17
@@ -47,7 +86,27 @@ java {
 }
 
 jar {
-    from "LICENSE"
+    inputs.property "archivesName", project.base.archivesName
+
+    from("LICENSE") {
+        rename { "${it}_${inputs.properties.archivesName}"}
+    }
 }
 
-apply from: 'mcreator.gradle'
+// configure the maven publication
+publishing {
+    publications {
+        create("mavenJava", MavenPublication) {
+            artifactId = project.archives_base_name
+            from components.java
+        }
+    }
+
+    // See https://docs.gradle.org/current/userguide/publishing_maven.html for information on how to set up publishing.
+    repositories {
+        // Add repositories to publish to here.
+        // Notice: This block does NOT have the same function as the block in the top level.
+        // The repositories here will be used for publishing your artifact, not for
+        // retrieving dependencies.
+    }
+}

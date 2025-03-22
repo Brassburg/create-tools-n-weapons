@@ -3,6 +3,8 @@
   "item.create_tools_n_weapons.gear_axe": "Gear Axe",
   "item.create_tools_n_weapons.gear_hoe": "Gear Hoe",
   "item.create_tools_n_weapons.gear_shovel": "Gear Shovel",
-  "item_group.create_tools_n_weapons.create_tools_n_weapons": "Create Tools N Weapons",
-  "item.create_tools_n_weapons.gear_sword": "Gear Sword"
+  "item_group.create_tools_n_weapons.ctnw": "Create Tools N Weapons",
+  "item.create_tools_n_weapons.gear_sword": "Gear Sword",
+  "category.create_tools": "Create Tools N Weapons",
+  "key.create_tools.break_mode": "Break Mode"
 }

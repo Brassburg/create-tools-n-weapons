@@ -1,0 +1,10 @@
+{
+  "replace": false,
+  "values": [
+    "create_tools_n_weapons:gear_axe",
+    "create_tools_n_weapons:gear_pickaxe",
+    "create_tools_n_weapons:gear_sword",
+    "create_tools_n_weapons:gear_shovel",
+    "create_tools_n_weapons:gear_hoe"
+  ]
+}

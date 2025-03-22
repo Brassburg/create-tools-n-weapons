@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "id": "create_tools_n_weapons",
-  "version": "1.0.0-1.20.1",
+  "version": "1.1.0-1.20.1",
   "name": "Create: Tools n Weapons",
   "description": "Create mod addon for tools and weapons",
   "authors": [
@@ -9,7 +9,7 @@
   ],
   "contact": {
     "homepage": "https://modrinth.com/project/createtools-n-weapons",
-    "sources": ""
+    "sources": "https://github.com/Brassburg/create-tools-n-weapons"
   },
   "license": "MIT License",
   "icon": "assets/create_tools_n_weapons/icon.png",
@@ -31,5 +31,8 @@
   },
   "mixins": [
     "create_tools_n_weapons.mixins.json"
-  ]
+  ],
+  "suggests": {
+    "another-mod": "*"
+  }
 }
